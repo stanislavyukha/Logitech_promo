@@ -10,3 +10,9 @@ btn.addEventListener("click", function () {
     togglerIcon.classList.toggle("burger__toggler_close");
 
 });
+// const navBar = document.getElementById("navbarNav");
+// window.addEventListener('resize', function(){
+//     if (window.innerWidth > 1000) {
+//         navBar.classList.toggle("show");
+//   }
+// });

@@ -23,16 +23,6 @@ body {
 .header__logo-img {
   height: 39px;
 }
-
-/* .navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-  justify-content: center;
-} */
 .header__burger {
   background-color: #2f3132;
 }
@@ -55,7 +45,7 @@ body {
 .navbar-light .burger__toggler_close {
   background-image: url(../img/burger-icon-toggled.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 40px;
 }
 .navbar-light .navbar-toggler {
   border: none;
@@ -68,7 +58,6 @@ body {
 .show .navbar-nav .nav-item .nav-link {
   display: none;
 }
-
 .show .navbar-nav .nav-item {
   text-align: center;
 }
@@ -82,12 +71,16 @@ body {
   text-decoration: none;
   padding-top: 32px;
 }
-.show .navbar-nav .nav-link-burger.active {
-  border-bottom: 1px solid #fff;
-  color: #fff;
-}
-.show .navbar-nav .nav-item:first-child {
+.show .navbar-nav {
   padding-top: 148px;
+}
+.show .navbar-nav .nav-link-burger.active {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding-bottom: 2px;
+}
+.show .navbar-nav .nav-item:first-child a:last-child {
+  padding-top: 0px;
 }
 .show .navbar-nav .nav-item:last-child {
   padding-bottom: 208px;
@@ -293,27 +286,33 @@ footer {
     height: 72px;
   }
 
-  /* .navbar-light .navbar-toggler {
+  .navbar-light .navbar-toggler {
     right: 58px;
-    position: static;
   }
   .navbar-light .navbar-toggler-icon {
+    position: relative;
+    right: 58px;
     width: 61px;
+    height: 61px;
   }
   .navbar-light .burger__toggler_close {
-    background-size: 61px;
+    background-size: 81px;
   }
   .show .navbar-nav .nav-item .nav-link-burger {
     font-size: 40px;
     line-height: 47px;
-    padding-bottom: 59px;
+    padding-top: 59px;
   }
-  .show .navbar-nav .nav-item:first-child {
-    padding-top: 123px;
+  .show .navbar-nav .nav-link-burger.active {
+    border-bottom: 3px solid #fff;
+    padding-top: 0;
   }
   .show .navbar-nav .nav-item:last-child {
     padding-bottom: 141px;
-  } */
+  }
+  #navbarNav.show .navbar-nav {
+    padding-top: 123px;
+  }
 
   .heading {
     font-size: 40px;
@@ -451,7 +450,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .center {
     padding-left: calc(50% - 580px);
     padding-right: calc(50% - 580px);
@@ -470,9 +469,14 @@ footer {
   .header__logo_dark {
     display: none;
   }
+  .show .navbar-nav {
+    display: none;
+  }
+  .header__logo-img {
+    height: 45px;
+  }
   #header__logo_white {
     display: block;
-    width: 150px;
   }
   .text {
     font-size: 20px;
