@@ -1,7 +1,6 @@
 body {
   font-family: Roboto;
 }
-
 .top {
   background: #e0e1e2;
   padding-bottom: 48px;
@@ -25,6 +24,15 @@ body {
   height: 39px;
 }
 
+/* .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  justify-content: center;
+} */
 .header__burger {
   background-color: #2f3132;
 }
@@ -58,15 +66,13 @@ body {
   display: none;
 }
 .show .navbar-nav .nav-item .nav-link {
-  /* display: none; */
+  display: none;
 }
 
 .show .navbar-nav .nav-item {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
-/* .show .navbar-nav .nav-item .nav-link-burger {
+.show .navbar-nav .nav-item .nav-link-burger {
   display: inline-block;
   font-weight: 900;
   font-size: 20px;
@@ -75,17 +81,17 @@ body {
   color: #c4c4c4;
   text-decoration: none;
   padding-top: 32px;
-} */
+}
 .show .navbar-nav .nav-link-burger.active {
   border-bottom: 1px solid #fff;
   color: #fff;
 }
-/* .show .navbar-nav .nav-item:first-child {
+.show .navbar-nav .nav-item:first-child {
   padding-top: 148px;
 }
 .show .navbar-nav .nav-item:last-child {
   padding-bottom: 208px;
-} */
+}
 
 .text {
   font-family: Roboto;
@@ -287,7 +293,7 @@ footer {
     height: 72px;
   }
 
-  .navbar-light .navbar-toggler {
+  /* .navbar-light .navbar-toggler {
     right: 58px;
     position: static;
   }
@@ -307,7 +313,7 @@ footer {
   }
   .show .navbar-nav .nav-item:last-child {
     padding-bottom: 141px;
-  }
+  } */
 
   .heading {
     font-size: 40px;
