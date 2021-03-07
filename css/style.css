@@ -151,7 +151,7 @@ body {
 }
 .info {
   margin-top: 70px;
-  margin-bottom: 77px;
+  margin-bottom: 63px;
 }
 .info__content {
   margin-top: 30px;
@@ -181,14 +181,94 @@ body {
   line-height: 16px;
   text-align: center;
   color: #2f3132;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 .info__text {
   margin-left: 67px;
   margin-right: 61px;
 }
-.carousel {
-  margin-bottom: 100px;
+#info__slider {
+  margin-bottom: 28px;
 }
+#info__slider .info__slider_controls {
+  position: relative;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+}
+#info__slider .info__slider_controls .carousel-indicators {
+  position: relative;
+}
+#info__slider .carousel-control-prev {
+  margin: 0;
+  padding: 0;
+  left: 12%;
+  top: -7px;
+  position: relative;
+  opacity: 1;
+}
+#info__slider .carousel-control-prev-icon {
+  width: 13px;
+  background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#info__slider .carousel-control-next {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 12%;
+  top: -7px;
+  opacity: 1;
+}
+#info__slider .carousel-control-next-icon {
+  width: 13px;
+  background-image: url(../img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#info__slider .carousel-indicators [data-bs-target] {
+  background-clip: border-box;
+  margin-left: 0;
+  margin-right: 22px;
+}
+#info__slider .carousel-indicators [data-bs-target]:last-child {
+  margin-right: 0;
+}
+
+#info__slider .info__slider_btn {
+  opacity: 1;
+  width: 31px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#info__slider .info__slider_btn.active {
+  box-shadow: inset 0 -7px 15px -7px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#info__slider .info_slider_btn-1 {
+  background-image: url(../img/wood-texture.svg);
+}
+#info__slider .info_slider_btn-2 {
+  background-image: url(../img/glass-texture.svg);
+}
+#info__slider .info_slider_btn-3 {
+  background-image: url(../img/linoleum-texture.svg);
+}
+#info__slider .info_slider_btn-4 {
+  background-image: url(../img/cloth-texture.svg);
+}
+#info__slider .info_slider_btn-5 {
+  background-image: url(../img/marble-texture.svg);
+}
+.text_info {
+  margin-top: 10px;
+}
+
 .flow {
   padding-top: 70px;
   padding-bottom: 218px;
@@ -364,6 +444,31 @@ footer {
     margin-bottom: 5px;
   }
   .info__heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #info__slider .carousel-control-prev {
+    left: 19%;
+  }
+  #info__slider .carousel-control-next {
+    right: 19%;
+  }
+  #info__slider .info__slider_btn {
+    width: 40px;
+    height: 40px;
+  }
+  #info__slider .carousel-control-prev-icon {
+    width: 18px;
+  }
+  #info__slider .carousel-control-next-icon {
+    width: 18px;
+  }
+  .info__heading {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 50px;
+  }
+  .text_info {
     font-size: 24px;
     line-height: 28px;
   }
