@@ -739,7 +739,7 @@ footer {
   }
   .flow {
     background-image: url(../img/flow-bg-lg.jpg);
-    padding-bottom: 870px;
+    padding-bottom: 653px;
   }
   .flow_center {
     padding-left: calc(50% - 479px);
@@ -820,5 +820,11 @@ footer {
   .mouse__img2 {
     order: 4;
     background-image: url(../img/image\ 2_large.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .flow {
+    background-image: url(../img/flow-bg-lg.jpg);
+    padding-bottom: 870px;
   }
 }
