@@ -108,7 +108,7 @@ body {
 .top__img {
   margin-top: 94px;
   height: 230px;
-  background-image: url(../img/MX-Master\ 1.png);
+  background-image: url(../img/MX-Master_1_small.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -369,6 +369,7 @@ footer {
     padding-bottom: 80px;
   }
   .top__img {
+    background-image: url(../img/MX-Master_1_medium.png);
     margin-top: 159px;
     margin-bottom: 124px;
     height: 514px;
@@ -590,6 +591,9 @@ footer {
   .center {
     padding-left: calc(50% - 580px);
     padding-right: calc(50% - 580px);
+  }
+  .top__img {
+    background-image: url(../img/MX-Master\ 1_large.png);
   }
   .header {
     background-color: #2f3132;
